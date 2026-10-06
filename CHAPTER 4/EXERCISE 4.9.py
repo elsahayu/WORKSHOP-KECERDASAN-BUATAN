@@ -1,0 +1,10 @@
+# EXERCISE 4.9 Memuat Model VGG19
+from keras.preprocessing import image
+from keras.applications.vgg19 import VGG19
+from keras.applications.vgg19 import preprocess_input
+from keras.applications.imagenet_utils import decode_predictions
+import numpy as np
+
+# MODIFIKASI: Menginisialisasi model VGG19
+model = VGG19(weights='imagenet')
+print(model.summary())
